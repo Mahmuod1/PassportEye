@@ -10,13 +10,13 @@
         "properties": {
             "max_diff": {
                 "type": "integer",
-                "description": "Error Level Analysis score TODO: are you going to improve its calculation or is max() OK?"
+                "description": "Error Level Analysis score. Currently, returns the biggest peak from all ELA peaks encountered."
             }
         }
     },
     "exif": {
         "type": "object",
-        "description": "EXIF data from the submitted image as key-value pairs TODO: describe better",
+        "description": "EXIF data from the submitted image as key-value pairs. The data is taken directly from the photo, so the contained keys can be different, depending on what EXIF information is present.",
         "properties": {}
     },
     "mrz": {
