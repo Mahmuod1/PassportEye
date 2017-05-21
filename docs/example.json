@@ -1,0 +1,48 @@
+{
+  "ela": {
+    "max_diff": 6
+  },
+  "exif": {},
+  "mrz": {
+    "bounding_box": [
+      [
+        309.5091162700831,
+        19.500000612510348
+      ],
+      [
+        309.5091162700831,
+        234.50171538138144
+      ],
+      [
+        274.4909911642962,
+        234.50171538138144
+      ],
+      [
+        274.4909911642962,
+        19.500000612510348
+      ]
+    ],
+    "check_composite": "0",
+    "check_date_of_birth": "2",
+    "check_expiration_date": "4",
+    "check_number": "6",
+    "country": "LVA",
+    "date_of_birth": "821212",
+    "expiration_date": "170305",
+    "method": "direct",
+    "mrz_type": "TD1",
+    "names": "ANDRIS",
+    "nationality": "LVA",
+    "number": "PA9992921",
+    "optional1": "121282<88882<<<",
+    "optional2": "<<<<<<<<<<<",
+    "sex": "M",
+    "surname": "PARAUDZINS",
+    "type": "I<",
+    "valid_composite": true,
+    "valid_date_of_birth": true,
+    "valid_expiration_date": true,
+    "valid_number": true,
+    "valid_score": 100
+  }
+}
