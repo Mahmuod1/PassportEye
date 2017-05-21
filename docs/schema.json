@@ -60,19 +60,19 @@
                 ]
             },
             "check_composite": {
-                "description": "",
+                "description": "Composite MRZ checksum as parsed from MRZ",
                 "type": "string"
             },
             "check_date_of_birth": {
-                "description": "",
+                "description": "Date of birth checksum as parsed from MRZ",
                 "type": "string"
             },
             "check_expiration_date": {
-                "description": "",
+                "description": "Expiration date checksum as parsed from MRZ",
                 "type": "string"
             },
             "check_number": {
-                "description": "",
+                "description": "Personal number checksum as parsed from MRZ",
                 "type": "string"
             },
             "country": {
@@ -109,17 +109,16 @@
                 "type": "string"
             },
             "optional1": {
-                "description": "",
+                "description": "Optional MRZ field that may or may not contain useful information",
                 "type": "string"
             },
             "optional2": {
-                "description": "",
+                "description": "Optional MRZ field that may or may not contain useful information",
                 "type": "string"
             },
             "sex": {
-                "description": "",
-                "type": "string",
-                "enum": ["M", "F", "<"]
+                "description": "Sex",
+                "type": "string"
             },
             "surname": {
                 "description": "Last name",
@@ -130,27 +129,26 @@
                 "type": "string"
             },
             "valid_composite": {
-                "description": "",
+                "description": "Composite checksum alidity",
                 "type": "boolean"
             },
             "valid_date_of_birth": {
-                "description": "",
+                "description": "Date of birth checksum validity",
                 "type": "boolean"
             },
             "valid_expiration_date": {
-                "description": "",
+                "description": "Expiration date checksum validity",
                 "type": "boolean"
             },
             "valid_number": {
-                "description": "",
+                "description": "Personal number validity score calculated ",
                 "type": "boolean"
             },
             "valid_score": {
-                "description": "The MRZ trust score calculated",
+                "description": "The MRZ trust score calculated. Is calculated based on valid_* fields, ",
                 "type": "integer"
             }
         }
     }
   }
 }
-
