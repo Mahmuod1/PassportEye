@@ -1,0 +1,156 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Image trust score and scoring data",
+  "description": "This JSON contains trust score and trust scoring data that was derived from an image passed to PassportEye",
+  "type": "object",
+  "properties": {
+    "ela": {
+        "type": "object",
+        "description": "Error Level Analysis score data",
+        "properties": {
+            "max_diff": {
+                "type": "integer",
+                "description": "Error Level Analysis score TODO: are you going to improve its calculation or is max() OK?"
+            }
+        }
+    },
+    "exif": {
+        "type": "object",
+        "description": "EXIF data from the submitted image as key-value pairs TODO: describe better",
+        "properties": {}
+    },
+    "mrz": {
+        "type": "object",
+        "description": "Decoded Machine Readable Zone data",
+        "properties": {
+            "bounding_box": {
+                "description": "Coordinates for bounding box for MRZ",
+                "type": "array",
+                "items": [
+                    [
+                      {
+                        "type": "array",
+                        "description": "X and Y coordinates for top right corner of bounding box",
+                        "items": {
+                          "type": "number"
+                        }
+                      },
+                      {
+                        "type": "array",
+                        "description": "X and Y coordinates for bottom right corner of bounding box",
+                        "items": {
+                          "type": "number"
+                        }
+                      },
+                      {
+                        "type": "array",
+                        "description": "X and Y coordinates for bottom left corner of bounding box",
+                        "items": {
+                          "type": "number"
+                        }
+                      },
+                      {
+                        "type": "array",
+                        "description": "X and Y coordinates for top left corner of bounding box",
+                        "items": {
+                          "type": "number"
+                        }
+                      }
+                    ]
+                ]
+            },
+            "check_composite": {
+                "description": "",
+                "type": "string"
+            },
+            "check_date_of_birth": {
+                "description": "",
+                "type": "string"
+            },
+            "check_expiration_date": {
+                "description": "",
+                "type": "string"
+            },
+            "check_number": {
+                "description": "",
+                "type": "string"
+            },
+            "country": {
+                "description": "Country code",
+                "type": "string"
+            },
+            "date_of_birth": {
+                "description": "Date of birth in DDMMYY format",
+                "type": "string"
+            },
+            "expiration_date": {
+                "description": "Expiration date in DDMMYY format",
+                "type": "string"
+            },
+            "method": {
+                "description": "",
+                "type": "string"
+            },
+            "mrz_type": {
+                "description": "MRZ type",
+                "type": "string",
+                "enum": ["TD1", "TD2", "TD3", "MRVA", "MRVB"]
+            },
+            "names": {
+                "description": "First name",
+                "type": "string"
+            },
+            "nationality": {
+                "description": "",
+                "type": "string"
+            },
+            "number": {
+                "description": "",
+                "type": "string"
+            },
+            "optional1": {
+                "description": "",
+                "type": "string"
+            },
+            "optional2": {
+                "description": "",
+                "type": "string"
+            },
+            "sex": {
+                "description": "",
+                "type": "string",
+                "enum": ["M", "F", "<"]
+            },
+            "surname": {
+                "description": "Last name",
+                "type": "string"
+            },
+            "type": {
+                "description": "MRZ document type field contents",
+                "type": "string"
+            },
+            "valid_composite": {
+                "description": "",
+                "type": "boolean"
+            },
+            "valid_date_of_birth": {
+                "description": "",
+                "type": "boolean"
+            },
+            "valid_expiration_date": {
+                "description": "",
+                "type": "boolean"
+            },
+            "valid_number": {
+                "description": "",
+                "type": "boolean"
+            },
+            "valid_score": {
+                "description": "The MRZ trust score calculated",
+                "type": "integer"
+            }
+        }
+    }
+  }
+}
+
