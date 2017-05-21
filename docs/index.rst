@@ -34,7 +34,7 @@ verification of documents and for other purposes, as necessary. :doc:`The comman
 Python usage 
 ------------
 
-You can also use MRZ as a library in your Python code if you want to be able to integrate it deeper and have better control over features present. :doc`Python usage is described here <python_usage>`.
+You can also use MRZ as a library in your Python code if you want to be able to integrate it deeper and have better control over features present. :doc:`Python usage is described here <python_usage>`.
 
 .. toctree::
    :maxdepth: 1
