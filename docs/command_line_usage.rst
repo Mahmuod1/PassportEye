@@ -1,4 +1,5 @@
-.. _python_usage:
+.. _command_line_usage:
+
 Command-line usage
 ==================
 
@@ -13,4 +14,5 @@ Note that the tool provides a limited support for PDF files -- it attempts to ex
 from the PDF and applies the recognition on it. This seems to work fine with most scanner-produced one-page PDFs, but
 has not been tested extensively.
 
-After getting a response, :doc:`refer to our response description <passporteye_response>`.
+After getting a response, :doc:`refer to our response description <api>`.
+

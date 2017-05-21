@@ -1,4 +1,5 @@
 .. _service_usage:
+
 Service usage
 =============
 
@@ -14,4 +15,5 @@ you can use to do that:
     >>> r = requests.post("http://passporteye.domain/upload_file", 
     >>> r.text
 	
-After getting a response, :doc:`refer to our response description <passporteye_response>`.
+After getting a response, :doc:`refer to our response description <api>`.
+

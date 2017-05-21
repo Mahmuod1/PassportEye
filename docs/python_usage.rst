@@ -33,4 +33,4 @@ which is used in the algorithm to extract ROIs alongside the boxes corresponding
     ..     plot(b.points[:,1], b.points[:,0], c='b')
     ..     b.plot()
 	
-After getting a response, :doc:`refer to our response description <passporteye_response>`.
+After getting a response, :doc:`refer to our response description <api>`.
