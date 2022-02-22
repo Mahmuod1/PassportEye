@@ -1,8 +1,8 @@
 .. _usage:
-How PasswordEye can be used
+How PassportEye can be used
 ===========================
 
-PasswordEye can be used from command-line, through its service API or through its Python API:
+PassportEye can be used from command-line, through its service API or through its Python API:
 
 .. toctree::
    :maxdepth: 1
